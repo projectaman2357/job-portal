@@ -1,0 +1,133 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+  }
+  
+  /* Home Container */
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  /* Header */
+  .home__header {
+    text-align: center;
+    padding: 3rem;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .home__header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .home__header p {
+    font-size: 1.25rem;
+    opacity: 0.8;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Section for About Us and Features */
+  .home__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 3rem;
+    gap: 3rem;
+  }
+  
+  .home__info, .home__features {
+    flex: 1;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .home__info:hover, .home__features:hover {
+    transform: scale(1.05);
+  }
+  
+  .home__info h2, .home__features h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+    transition: color 0.3s;
+  }
+  
+  .home__info p, .home__features ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* List Styles */
+  .home__features ul {
+    list-style-type: none;
+  }
+  
+  .home__features li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .home__features li:before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #007BFF;
+  }
+  
+  /* Footer */
+  .home__footer {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+    
+  }
+  .home__footer p{
+    text-align: center;
+    margin-left: 40%;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home__content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  

@@ -1,0 +1,155 @@
+/* candidate-signup.css */
+
+/* Scoped to CandidateSignup */
+.candidate-signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .candidate-signup-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 800px;
+  }
+  
+  .candidate-signup-row {
+    display: flex;
+    width: 100%;
+  }
+  
+  .candidate-signup-form-section {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .candidate-signup-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .candidate-signup-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .candidate-signup-input-group label {
+    font-size: 18px;
+    margin-right: 15px;
+    color: #666;
+  }
+  
+  .candidate-signup-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .candidate-signup-input:focus {
+    border-color: #4b92db;
+  }
+  
+  .candidate-signup-checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .candidate-signup-checkbox-group input {
+    margin-right: 10px;
+  }
+  
+  .candidate-signup-checkbox-group label {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .candidate-signup-btn {
+    background-color: #4b92db;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .candidate-signup-btn:hover {
+    background-color: #3b7ab3;
+  }
+  
+  .candidate-signup-image-section {
+    flex: 1;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .candidate-signup-image {
+    max-width: 100%;
+    height: 100%;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .candidate-signup-card {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .candidate-signup-form-section,
+    .candidate-signup-image-section {
+      flex: none;
+      width: 100%;
+    }
+  
+    .candidate-signup-title {
+      font-size: 24px;
+    }
+  
+    .candidate-signup-input {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .candidate-signup-btn {
+      font-size: 16px;
+    }
+  
+    .candidate-signup-image {
+      max-width: 90%;
+    }
+  }
+  

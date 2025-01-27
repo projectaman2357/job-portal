@@ -1,0 +1,167 @@
+/* Job Posting Container */
+.job-posting-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  /* Job Sidebar */
+  .job-sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+    height: calc(100vh - 60px); /* Ensure full height minus padding */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: sticky;
+    top: 30px;
+  }
+  
+  /* Profile Section */
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .profile-name {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #34495e;
+    min-width: 160px;
+    border-radius: 5px;
+    top: 40px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Job Posting Form Section */
+  .job-posting-form-section {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .job-posting-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea, select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: #6c63ff;
+  }
+  
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  /* Submit Button */
+  .post-job-btn {
+    padding: 14px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #17a2b8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-end;
+  }
+  
+  .post-job-btn:hover {
+    background-color: #138496;
+  }
+  
+  .post-job-btn:active {
+    transform: translateY(2px);
+  }
+  

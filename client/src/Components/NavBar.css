@@ -1,0 +1,197 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #007bff, #6a11cb);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo Styling */
+  .navbar__left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar__logo {
+    height: 60px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+  }
+  
+  /* Menu Container */
+  .navbar__right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Menu Buttons */
+  .navbar__button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+  }
+  
+  /* Hover Effects for Buttons */
+  .navbar__button:hover {
+    background: #007bff;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Active Effects for Buttons */
+  .navbar__button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Login Button Styles */
+  .navbar__login-button {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    outline: none
+  }
+  
+  .navbar__login-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar__login-button:active {
+    background-color: #004085;
+  }
+  
+  /* Sign-Up Button Styles */
+  .navbar__signup-button {
+    background-color: #28a745; /* Green color */
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__signup-button:hover {
+    background-color: #218838;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar__signup-button:active {
+    background-color: #1e7e34;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+    }
+  
+    .navbar__menu {
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+  
+    .navbar__button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  /* Logo Size Adjustments */
+  .navbar__logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;
+    margin-right: 20px; /* Optional spacing */
+  }
+/* Menu Container */
+.navbar__right {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Navbar Menu (Ensure Flexbox layout is correct) */
+  .navbar__menu {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Space between buttons */
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; /* Align buttons to the right */
+  }
+  
+  /* General Button Styling */
+  .navbar__button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+  }
+  
+  /* Specific Styling for Login and Sign-Up Buttons */
+  .navbar__login-button,
+  .navbar__signup-button {
+    margin: 0 10px; /* Space between buttons */
+  }
+  
+  .navbar__button:hover {
+    background: #007bff;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar__button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+    }
+  
+    .navbar__menu {
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+  
+    .navbar__button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+    
